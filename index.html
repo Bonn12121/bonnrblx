@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <script>
-        window.location.href = "https://www.youtube.com/watch?v=xMHJGd3wwZk&list=RDxMHJGd3wwZk&start_radio=1";
+        setTimeout(function() {
+            document.body.style.backgroundColor = 'black';
+            document.body.style.color = 'red';
+            document.body.innerHTML = '<div style="font-size: 200px; text-align: center; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: \'Arial Black\', Arial, sans-serif; animation: scare 0.5s ease-in-out;">👻 BOO! 👻</div>';
+            document.head.innerHTML += '<style>@keyframes scare { 0% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); } 50% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); } 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }}</style>';
+        }, 3000);
     </script>
 </head>
 <body>
+    <p style="text-align: center; font-size: 24px; margin-top: 50px;">Please wait...</p>
 </body>
 </html></content>
-<parameter name="filePath">c:\Users\ADMIN\Downloads\Magica\troll.html
