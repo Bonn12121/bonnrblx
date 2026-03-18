@@ -3,85 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gift</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: white;
-            font-family: Arial, sans-serif;
-        }
-        .gift {
-            width: 400px;
-            height: 400px;
-            background: #ff6b6b;
-            border-radius: 10px;
-            position: relative;
-            cursor: pointer;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
-        }
-        .gift:hover {
-            transform: scale(1.1);
-        }
-        .gift::before {
-            content: '';
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 40px;
-            height: 40px;
-            background: #ffd93d;
-            border-radius: 50%;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-        }
-        .gift::after {
-            content: '🎁';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 160px;
-        }
-        .ribbon {
-            position: absolute;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 120px;
-            height: 20px;
-            background: #ffd93d;
-            border-radius: 10px;
-        }
-        .ribbon::before {
-            content: '';
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            width: 20px;
-            height: 40px;
-            background: #ffd93d;
-            border-radius: 10px;
-        }
-        .ribbon::after {
-            content: '';
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            width: 20px;
-            height: 40px;
-            background: #ffd93d;
-            border-radius: 10px;
-        }
-    </style>
+    <title>Test Page</title>
 </head>
 <body>
-    <div class="gift" onclick="window.location.href='https://www.youtube.com/watch?v=iik25wqIuFo&list=RDiik25wqIuFo&start_radio=1'">
-        <div class="ribbon"></div>
-    </div>
+    <h1>YouTube Link</h1>
+    <a href="https://www.youtube.com/watch?v=dImlzN_cqp4&list=RDdImlzN_cqp4&start_radio=1" target="_blank">Watch this YouTube video</a>
 </body>
-</html></content>
+</html>
