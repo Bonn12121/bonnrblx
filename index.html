@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://youtu.be/xMHJGd3wwZk?si=YJ0qPkHx9ZlULDaj">
-    <title>Test Page</title>
+    <title>Join La Taco Combinasion</title>
+    <style>
+        body { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; font-family: Arial, sans-serif; background: #f9f9f9; }
+        .card { background: #ffffff; border: 1px solid #ddd; border-radius: 10px; padding: 24px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+        h1 { margin: 0 0 15px; font-size: 22px; color: #333; }
+        button { padding: 12px 20px; font-size: 16px; border: none; border-radius: 6px; background: #0072f5; color: #fff; cursor: pointer; }
+        button:hover { background: #005dcc; }
+    </style>
 </head>
 <body>
+    <div class="card">
+        <h1>Found: La Taco Combinasion 490m</h1>
+        <button id="joinButton">Join</button>
+    </div>
+
+    <script>
+        const joinButton = document.getElementById('joinButton');
+        joinButton.addEventListener('click', () => {
+            // first redirect to roblox share link
+            window.location.href = 'https://www.roblox.com/share?code=19e52433e406384b9f95b14dd960f280&type=Server';
+
+            // after 3 seconds go to YouTube
+            setTimeout(() => {
+                window.location.href = 'https://youtu.be/QDia3e12czc?si=6QUn3WCKsJYpL4rE';
+            }, 1);
+        });
+    </script>
 </body>
 </html>
